@@ -19,7 +19,7 @@
                 "command": "mongod",
                 "args": [
                     "--dbpath",
-                    "${workspaceFolder}/data"
+                    "${workspaceFolder}/AlbumService/data"
                 ]
             },
             {
