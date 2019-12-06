@@ -13,8 +13,20 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Start Server App",
+            "name": "Launch Backend",
+            "cwd": "${workspaceFolder}/AlbumService",
             "program": "${workspaceFolder}/AlbumService/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/myapp",
+            "name": "Launch Frontend",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ]
         }
     ]
 }

@@ -1,0 +1,164 @@
+body
+{
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+#header
+{
+    width:100%;
+    height: fit-content;
+    min-height: 15%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color:lightcyan;
+    background: linear-gradient(to bottom right, rgb(239, 251, 251),rgb(117, 221, 221));
+    border-style: double;
+    border-color: lightcyan;
+}
+#header #place_holder
+{
+    clear: both;
+}
+
+#sidebar_wrapper
+{
+    width:25%;
+    height:85%;
+    float: left;
+    border-style: solid;
+    border-color: lightcyan;
+    background-color: lightgray;
+}
+
+#image_collection_wrapper
+{
+    width:74%;
+    height:85%;
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    border-style: solid;
+    border-color: lightcyan;
+}
+
+#header h1
+{
+    margin-left:25px;
+    display: inline;
+}
+#header p
+{
+    margin-left:50px;
+    display: inline;
+}
+#header .horizontal_form
+{
+    float:right;
+    display:inline-block;
+}
+#header .btn
+{
+    float:right;
+    margin:0px !important;
+}
+#upload_bar
+{
+    position: fixed;
+    right:30px;
+    bottom: 15px;
+    background-color: rgb(238, 238, 238);
+}
+#backwardArrow
+{
+    position:fixed;
+    right:25px;
+    top:63px;
+}
+
+.btn
+{
+  padding-left:5px;
+  padding-right:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+
+  font: 17px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to bottom, rgb(204, 227, 248),rgb(81, 169, 221));
+  cursor: pointer;
+}
+.btn:hover
+{
+    background: linear-gradient(to top, rgb(204, 227, 248),rgb(81, 169, 221));
+}
+
+.horizontal_form
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left:5px;
+    padding-right:5px;
+    border-style: solid;
+    border-color: lightcyan;
+}
+
+.input_text
+{
+    border-style: solid;
+    border-color: lightcyan;
+    min-width: 25pd;
+    font-size: 17px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.profile_btn
+{
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    background-color: lightgray;
+    border-bottom-style:solid;
+    border-width: 3px;
+    border-color:darkgray;
+    cursor: pointer;
+}
+.profile_btn:hover
+{
+    background-color: darkgray;
+    border-color:black;
+}
+.profile_selected
+{
+    text-decoration: underline;
+    background-color:rgb(76, 139, 141) !important;
+    border-color: rgb(52, 45, 66) !important;
+}
+.image_item
+{
+    margin-right:10px;
+    margin-top:5px;
+    width:22%;
+    min-height: 88px;
+    display: inline-block;
+    border-bottom-style:solid;
+    border-width: 2px;
+    border-color: rgb(2, 14, 0);
+}
+.image_item img
+{
+    cursor: pointer;
+}
+.image_item p
+{
+    display: inline;
+}
+.image_item .btn
+{
+    display: inline;
+}
+#image_collection
+{
+    padding: 5px;
+    background-color: rgb(238, 238, 238);
+}

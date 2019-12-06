@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Unit test for server side</title>
+    </head>
+    <body>
+        <h1>Test for server application</h1>
+        <a onclick="init()">Test for init</a>
+        <div id="result"></div>
+    </body>
+    <script>
+        function init()
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function()
+            {
+                if(xhr.readyState==4 && xhr.status==200)
+                {
+                    var result = document.getElementById("result");
+                    result.innerHTML = "<p>"+xhr.responseText+"</p>";
+                }
+            }
+            xhr.open("GET", "http://localhost:3002/init");
+        }
+    </script>
+</html>
